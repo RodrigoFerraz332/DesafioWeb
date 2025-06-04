@@ -1,0 +1,41 @@
+.icon-link {
+    display: inline-block; 
+    padding: 10px; 
+    border-radius: 50%; 
+    justify-content: center; 
+    align-items: center; }
+    
+    .icon-link img {
+    width: 50px; 
+    height: 50px;/
+    }
+
+
+.facebook-button {
+    background-color: #3b5998;
+}
+.facebook-button-img:hover {
+            background-color: #3f729b;
+        }
+
+.instagram-button {
+    background-color: #E4405F;
+}
+.instagram-button-img:hover {
+            background-color: #3f729b;
+        }
+
+.whatsapp-button {
+    background-color: #25D366;
+}
+.whatsapp-button-img:hover {
+            background-color: #229a00;
+        }
+
+
+.icon-container .icon-link {
+    margin-right: 10px; /* Exemplo de espaçamento */
+}
+.icon-container .icon-link:last-child {
+    margin-right: 0; /* Remove margem do último */
+}

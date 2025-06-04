@@ -65,3 +65,11 @@ function marcarComoConcluido(elemOuId) {
     btn.classList.remove('btn-success');
     btn.classList.add('btn-secondary');
 }
+
+
+function avaliar(resposta) {
+    const mensagem = document.getElementById("resposta");
+    mensagem.textContent = "Obrigado por avaliar!";
+    const botoes = document.querySelectorAll("#avaliacao button");
+    botoes.forEach(btn => btn.style.display = "none");
+}
