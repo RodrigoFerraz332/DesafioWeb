@@ -24,3 +24,150 @@
 }
 
 
+
+
+//acima está o código anterior
+
+
+
+
+#indicador{
+    background-color: #fff;
+    left:0;
+}
+
+
+.DarkbodyIndex{
+
+    font:110%;
+    color: rgb(212, 201, 201);
+    background-color: rgb(33, 33, 33);
+
+    #indicador{
+        background-color: gray;
+        left: 117px;
+    }
+
+    footer{
+        outline:7px solid white;
+    }
+
+    h1,h2,h3,h4,h5,h6{
+        color:white;
+    }
+
+    #icons{
+        border-width: 2px 2px 4px 4px;
+        border-color: white;
+        background-color: #212529;
+        font:110%;
+        color: rgb(212, 201, 201);
+    }
+
+}
+
+.transic{
+    transition: .5s;
+    
+    #indicador{
+        transition: .5s;
+    }
+}
+
+.DarkbodyTutoriais{
+    
+    font:110%;
+    color: rgb(212, 201, 201);
+    background-color: rgb(33, 33, 33);
+
+    footer{
+        outline:7px solid white;
+    }
+
+    h1,h2,h3,h4,h5,h6{
+        color:white;
+    }
+
+    #icons{
+        border-width: 2px 2px 4px 4px;
+        border-color: white;
+        background-color: #212529;
+        font:110%;
+        color: rgb(212, 201, 201);
+    }
+}
+
+.DarkbodyTutorial1{
+
+    font:110%;
+    color: rgb(212, 201, 201);
+    background-color: rgb(33, 33, 33);
+
+    footer{
+        outline:7px solid white;
+    }
+
+    h1,h2,h3,h4,h5,h6{
+        color:white;
+    }
+
+}
+
+.DarkbodyTutorial2{
+    
+    font:110%;
+    color: rgb(212, 201, 201);
+    background-color: rgb(33, 33, 33);
+
+    footer{
+        outline:7px solid white;
+    }
+
+    h1,h2,h3,h4,h5,h6{
+        color:white;
+    }
+}
+
+
+#facebook-button{
+    background-color: rgb(45, 45, 217);
+}
+
+#instagram-button{
+    background:linear-gradient(purple, rgb(191, 191, 5));
+}
+
+#whatsapp-button{
+    background: linear-gradient(rgb(70, 233, 70),rgb(2, 147, 2));
+}
+
+
+.DarkbodyContato{
+
+    font:110%;
+    color: rgb(212, 201, 201);
+    background-color: rgb(33, 33, 33);
+
+    footer{
+        outline:7px solid white;
+    }
+
+    h1,h2,h3,h4,h5,h6{
+        color:white;
+    }
+
+    #thankMsg{
+        color:white;
+    }
+
+    #formSendMsg{
+        background: linear-gradient(rgb(88, 88, 241), rgb(147, 147, 247));
+        color:rgba(255, 255, 255, 0.921);
+    }
+
+    #IdmeninaEGato{
+        box-shadow: 15px 10px 20px 5px rgb(179, 189, 51), -15px 10px 20px 5px rgb(179, 189, 51);
+    }
+
+
+}
