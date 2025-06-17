@@ -73,3 +73,64 @@ function avaliar(resposta) {
     const botoes = document.querySelectorAll("#avaliacao button");
     botoes.forEach(btn => btn.style.display = "none");
 }
+
+function pressButton(){
+    const body = document.getElementById("bodyIndex");
+    const element = document.getElementById("themeTitle");
+
+        try{
+            if(body.classList.contains("DarkbodyIndex")){
+                localStorage.setItem("verifyThemeDark", false);
+            }
+            else{
+                localStorage.setItem("verifyThemeDark", true);
+            }
+        }
+        catch(QuotaExceededError){
+            console.warn("Erro de Cota alocada ao localStorage");
+            console.log(QuotaExceededError);
+        }
+
+        try{
+            body.classList.add("transic");
+            
+            body.classList.toggle("DarkbodyIndex");
+        }
+        catch(SyntaxErrorORInvalidCharacterError){
+            console.warn("Erro na troca de tema da classe");
+            console.log(SyntaxErrorORInvalidCharacterError);
+        }
+
+        if (element.innerHTML == "Mudar para tema Claro:")
+            element.innerHTML = "Mudar para tema Escuro:";
+        else
+            element.innerHTML = "Mudar para tema Claro:";
+
+
+        if(localStorage.getItem("verifyAcessButton") == null) localStorage.setItem("verifyAcessButton", true);
+
+}
+
+
+function isPossibleChangeTheme(){
+    if (localStorage.getItem("verifyAcessButton") === localStorage.getItem("verifyThemeDark")) return true;
+
+    return false;
+}
+
+
+function changeDarkTheme(BodyId){
+
+    let selectorName = "Dark"+BodyId;
+
+
+    if (isPossibleChangeTheme())
+        document.getElementById(BodyId).classList.add(selectorName);
+    
+}
+
+
+function changeImg(){
+    if (isPossibleChangeTheme())
+        document.getElementById("IdmeninaEGato").setAttribute("src","img/meninaEGatoToDarkTheme.png");
+}
