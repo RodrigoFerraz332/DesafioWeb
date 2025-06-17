@@ -6,12 +6,13 @@
         <title>Neto Digital - Contato</title>
         <link rel="icon" href="https://placehold.co/32x32/007bff/ffffff?text=ND" type="image/png">
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">    <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="style.css">
     </head>
 
-    <body class="d-flex flex-column min-vh-100">
+    <body onload="changeDarkTheme('bodyContato'), changeImg()" id="bodyContato" class="d-flex flex-column min-vh-100">
         <header class="bg-primary text-white text-center py-4 shadow-sm">
             <div class="container">
-                <h1 class="display-4">Contato</h1>
+                <h1 class="display-4">Contate-nos!</h1>
             </div>
                 
         </header>
@@ -41,9 +42,14 @@
             </div>
         </nav>
 
-        <div class="container container-fluid" >
-            <main class="container col-md-6 my-5 py-4 shadow-lg rounded lead" style=" margin-bottom: 40px;">
-                <div class="text-center ">
+        <main>
+
+            <div>
+                <img id="IdmeninaEGato" src="img/meninaEGatoToWhiteTheme.png" style="margin-left: 20px; margin-top: 100px;" alt="[imagem de uma menina com um gato]" width="20%" height="30%">
+            </div>
+
+            <div id="formSendMsg" style="margin-bottom: 30px; padding-bottom: 30px; padding-top: 8px; " class="container container-fluid col-md-6 shadow-lg rounded-5">
+                <div class="text-center">
                     <h5>Envie sua mensagem</h5>
                     <p>Você também pode nos seguir nas <ins>redes sociais</ins> (links disponíveis em breve)</p>
                 </div>
@@ -92,26 +98,45 @@
                             </div>
                         </div>
                         <div class="text-center">               
-                            <input type="submit" value="Enviar mensagem" class="rounded-pill bg-primary text-white">
+                            <input type="submit" value="Enviar mensagem" class="rounded-pill bg-primary text-white" style="width: 33.33%; height: 40px">
                         </div>
                     </form>
                 </div>
-            </main>
-        </div>
-        <section id="outras-formas-contato" class="py-5 text-center">
+            </div>
+
+        </main>
+
+        <section id="outras-formas-contato" style="margin-top: 100px; margin-bottom: 50px;" class="text-center icon-container row">
+
             <h2 class="mb-4 display-5">Outras Formas de Contato</h2>
-            <div class="mt-4 icon-container">
-            <a href="https://www.facebook.com/unisinos" class="icon-link me-2 rounded-circle facebook-button"> <img src="img/face.png" alt="[Ícone do Facebook]">
-        </a>
-            <a href="https://www.instagram.com/unisinos" class="icon-link me-2 rounded-circle instagram-button"> <img src="img/insta.png" alt="[Ícone do Instagram]">
-        </a>
-            <a href="https://chat.whatsapp.com" class="icon-link rounded-circle whatsapp-button"> <img src="img/whats.png" alt="[Ícone do WhatsApp]">
-        </a>
-        </div>
+
+                <div style="padding-left: 30%; padding-right: 30%; display: flex; justify-content: space-between; ">
+
+                    <div style="width: 20%; height: 100%;">
+                        <a href="https://www.facebook.com/unisinos" class="col icon-link"> 
+                            <img id="facebook-button" src="img/face.png"  height="100%" width="100%" alt="[Ícone do Facebook]">
+                        </a>
+                    </div>
+
+                    <div style="width: 20%; height: 100%;">
+                        <a href="https://www.instagram.com/unisinos" class="col icon-link"> 
+                            <img id="instagram-button" src="img/insta.png"  height="100%" width="100%" alt="[Ícone do Instagram]">
+                        </a>
+                    </div>
+                    
+                    <div style="width: 20%; height: 100%;">
+                        <a href="https://chat.whatsapp.com" class="col icon-link"> 
+                            <img id="whatsapp-button" src="img/whats.png"  height="100%" width="100%" alt="[Ícone do WhatsApp]">
+                        </a>
+                    </div>
+
+                </div>
+        
         </section>
+
         <div class="container">
-            <img src="img/idosa.png" alt="[imagem de uma senhora com as mãos em coração]" class="float-end"  width="120px" height="120px">  
-            <p class="float-end" style="font-weight: bold;">Responderemos o mais breve possível!</p>  
+            <img src="img/idosa.png" alt="[imagem de uma senhora com as mãos em coração]" class="float-end"  width="170px" height="170px">  
+            <p id="thankMsg" class="float-end" style="font-weight: bold;">Responderemos o mais breve possível!</p>  
         </div>
 
         <footer class="bg-dark text-white text-center py-4 mt-auto shadow-lg">
