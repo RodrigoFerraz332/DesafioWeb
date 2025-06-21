@@ -5,7 +5,7 @@ function verifyMsg(){
 function verifyName(id){
     const nomeCompleto = document.getElementById(id).value;
 
-    const regex = /0-9|\W/;
+    const regex = /[0-9]|\W/;
     const result = regex.test(nomeCompleto);
 
     if (result){
