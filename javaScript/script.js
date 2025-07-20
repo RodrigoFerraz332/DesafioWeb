@@ -29,7 +29,7 @@ function verifyTopico(id){
 function verifyText(id){
     const msg = document.getElementById(id).value;
 
-    const regex = /\W/;
+    const regex = /\W\./;
     const result = regex.test(msg);
 
     if (result){
